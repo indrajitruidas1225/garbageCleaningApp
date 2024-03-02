@@ -1,0 +1,10 @@
+/* sign-up.component.scss */
+
+/* Adjust spacing between label and input */
+ion-item.item-dob ion-label {
+  margin-top: 0px; /* Adjust as needed */
+}
+
+ion-item.item-dob ion-input {
+  margin-top: 14px; /* Adjust as needed */
+}

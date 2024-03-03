@@ -2,6 +2,20 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+
+.success-alert {
+  --ion-background-color: #4caf50; /* Background color */
+  --ion-color-base: #ffffff; /* Text color */
+  --ion-color-text: #ffffff; /* Text color */
+  --ion-color-border: transparent; /* Border color */
+  --border-radius: 10px; /* Border radius */
+  --padding: 16px; /* Padding */
+  --box-shadow: none; /* Box shadow */
+  --ion-font-size: 16px; /* Font size */
+}
+
+
+
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;

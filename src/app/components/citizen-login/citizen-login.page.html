@@ -8,18 +8,23 @@
 <ion-content class="ion-padding">
   <ion-item>
     <ion-label position="floating">Email</ion-label>
-    <ion-input type="email" ></ion-input>
+    <ion-input type="email" [(ngModel)]='email'></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Password</ion-label>
-    <ion-input type="password" ></ion-input>
+    <ion-input type="password" [(ngModel)]='password'></ion-input>
   </ion-item>
 
-  <ion-button expand="full" >Login</ion-button>
+  <ion-button expand="full" (click)="login()">Login</ion-button>
 
   <div class="signup-option">
     <p>Don't have an account?</p>
     <ion-button expand="full" color="medium" routerLink="/sign-up">Sign Up</ion-button>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    <ion-icon name="alert-circle-outline" class="error-icon"></ion-icon>
+    <span>{{ errorMessage }}</span>
   </div>
 </ion-content>
